@@ -16,10 +16,18 @@
       negIndex = Math.abs(negIndex);
       negIndex = arr.length - negIndex;
       return arr[negIndex];
+    },
+    removeCharacter: function(str, char) {
+      var x = new RegExp(char, 'g');
+      for (var i = 0; i < str.length; i++) {
+        if (str.charAt(i) === char) {
+          str = str.replace(x, '');
+        }
+      }
+      return str;
     }
+
   };
-    // createObject: createObject,
-    // getNegativeIndex: getNegativeIndex,
     // removeCharacter: removeCharacter,
     // outputObject: outputObject,
     // getVowels: getVowels,

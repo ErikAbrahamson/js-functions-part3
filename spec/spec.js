@@ -27,6 +27,11 @@ describe('getNegativeIndex', function() {
   });
 });
 
+describe('removeCharacter', function() {
+  it('takes a string and char as arguments and returns the string with char(s) removed', function() {
+    expect(code.removeCharacter('javascript', 'a')).toEqual('jvscript');
+  });
+});
 // describe('getVowels', function() {
 //   it('returns all vowels in a string', function() {
 //     expect(code.getVowels('aeioux')).toEqual('aeiou');
