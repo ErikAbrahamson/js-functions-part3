@@ -14,6 +14,19 @@ describe('getTotalLetters', function() {
   });
 });
 
+describe('createObject', function() {
+  it('takes two args, returns new Obj with key of first arg and val of second', function() {
+    expect(code.createObject('city','Boulder')).toBeTruthy();
+  });
+});
+
+describe('getNegativeIndex', function() {
+  it('takes an array and negative number as args, returns val from array at given neg index', function() {
+    var letterArray = ['a', 'b', 'c', 'd', 'e'];
+    expect(code.getNegativeIndex(letterArray, -3)).toEqual('c');
+  });
+});
+
 // describe('getVowels', function() {
 //   it('returns all vowels in a string', function() {
 //     expect(code.getVowels('aeioux')).toEqual('aeiou');
