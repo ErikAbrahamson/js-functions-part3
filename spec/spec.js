@@ -32,6 +32,13 @@ describe('removeCharacter', function() {
     expect(code.removeCharacter('javascript', 'a')).toEqual('jvscript');
   });
 });
+
+describe('outputObject', function() {
+  it('takes in an object and returns key value pairs in string format', function() {
+    var ages = {john: 10, jerry: 11, jenny: 12 };
+    expect(code.outputObject(ages)).toBe(key+'is'+value);
+  });
+});
 // describe('getVowels', function() {
 //   it('returns all vowels in a string', function() {
 //     expect(code.getVowels('aeioux')).toEqual('aeiou');

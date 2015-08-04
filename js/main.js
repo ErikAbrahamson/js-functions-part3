@@ -25,10 +25,15 @@
         }
       }
       return str;
+    },
+    outputObject: function(Obj) {
+      var x = [];
+      for (var i = 0; i < keys(Obj).length; i++) {
+        x.push(keys(Obj)[i] + ' is ' + values(Obj)[i]);
+      }
+      return x.toString().replace(',',', ');
     }
-
   };
-    // removeCharacter: removeCharacter,
     // outputObject: outputObject,
     // getVowels: getVowels,
     // captureTwins: captureTwins,
