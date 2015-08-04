@@ -1,4 +1,4 @@
-# JavaScript Functions - part 3
+<!-- # JavaScript Functions - part 3
 
 1. Using the Yeoman [generator-galvanize-html](https://github.com/gSchool/generator-galvanize-html), generate a project boilerplate.
 1. Solve each of the given problems, creating a function that properly *returns* a value. Then `console.log` the result of the function to the JavaScript console outside the function.
@@ -48,7 +48,7 @@ console.log(test("ing"))
   ```javascript
   removeCharacter('javascript', 'a') // => jvscript
   removeCharacter('javascript', 1) // => javascript
-  removeCharacter('12345', 2) // => 1345
+  removeCharacter('12345', 2) // => 1345 -->
   ```
 
 1. Define a function called `ouputObject` that takes an object as an argument and returns each key-value pair in the following format 'key .

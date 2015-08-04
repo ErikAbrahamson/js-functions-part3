@@ -36,7 +36,7 @@ describe('removeCharacter', function() {
 describe('outputObject', function() {
   it('takes in an object and returns key value pairs in string format', function() {
     var ages = {john: 10, jerry: 11, jenny: 12 };
-    expect(code.outputObject(ages)).toBe(key+'is'+value);
+    expect(code.outputObject(ages)).toMatch('john is 10, jerry is 11, jenny is 12');
   });
 });
 // describe('getVowels', function() {

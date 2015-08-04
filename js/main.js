@@ -28,13 +28,12 @@
     },
     outputObject: function(Obj) {
       var x = [];
-      for (var i = 0; i < keys(Obj).length; i++) {
-        x.push(keys(Obj)[i] + ' is ' + values(Obj)[i]);
+      for (var kv in Obj) {
+        x.push( kv + ' is ' + Obj[kv] );
       }
-      return x.toString().replace(',',', ');
+      return x.toString().replace(/,/g, ', ');
     }
   };
-    // outputObject: outputObject,
     // getVowels: getVowels,
     // captureTwins: captureTwins,
     // testBooleanLogic: testBooleanLogic,
