@@ -32,6 +32,13 @@
         x.push( kv + ' is ' + Obj[kv] );
       }
       return x.toString().replace(/,/g, ', ');
+    },
+    getVowels: function(string) {
+      var newString = [];
+      var vowels = ['a','e','i','o','u'];
+      for (var i = 0; i < string.length; i++) {
+
+      }
     }
   };
     // getVowels: getVowels,

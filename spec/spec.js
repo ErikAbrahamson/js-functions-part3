@@ -39,8 +39,9 @@ describe('outputObject', function() {
     expect(code.outputObject(ages)).toMatch('john is 10, jerry is 11, jenny is 12');
   });
 });
-// describe('getVowels', function() {
-//   it('returns all vowels in a string', function() {
-//     expect(code.getVowels('aeioux')).toEqual('aeiou');
-//   });
-// });
+
+describe('getVowels', function() {
+  it('returns all vowels in a string', function() {
+    expect(code.getVowels('aeioux')).toEqual('aeiou');
+  });
+});
