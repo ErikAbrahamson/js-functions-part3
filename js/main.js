@@ -43,9 +43,16 @@
         }
       }
       return newString;
+    },
+    captureTwins: function(string) {
+      for (var i = 0; i < string.length; i+=2) {
+        if (string[i + 2] !== string[i + 1]) {
+          return true;
+        } else {
+          return false;
+        }
+      }
     }
-  };
-    // getVowels: getVowels,
-    // captureTwins: captureTwins,
+};
     // testBooleanLogic: testBooleanLogic,
     // getUniqueValues: getUniqueValues
