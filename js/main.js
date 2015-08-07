@@ -29,16 +29,20 @@
     outputObject: function(Obj) {
       var x = [];
       for (var kv in Obj) {
-        x.push( kv + ' is ' + Obj[kv] );
+        x.push(kv + ' is ' + Obj[kv]);
       }
       return x.toString().replace(/,/g, ', ');
     },
     getVowels: function(string) {
       var newString = [];
       var vowels = ['a','e','i','o','u'];
-      for (var i = 0; i < string.length; i++) {
-
+      var i, j = 0;
+      for (i; i < string.length, j < vowels.length; i++, j++) {
+        if (string.indexOf(vowels[j]) !== -1) {
+          newString.push(string[j]);
+        }
       }
+      return newString;
     }
   };
     // getVowels: getVowels,
